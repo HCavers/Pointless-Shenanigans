@@ -1,7 +1,7 @@
 //Me doing even more random stuff
 import java.io.*;
 
-class tessellatingTriangle
+class coolTriangle
 {
 	public static void main(String[] args)
 	{
@@ -14,7 +14,7 @@ class tessellatingTriangle
 			
 			//Find out how many triangles we have to deal with
 			int numTri = numTriangles(lines);
-			//System.out.println(numTri);
+			System.out.println(numTri);
 			
 			//Create loop to do all the lines needed
 			for(int i = 1; i <= lines; i++)
@@ -131,7 +131,7 @@ class tessellatingTriangle
 		for(int l = 1; l < numTriangles && escapeFlag == true; l++)
 		{
 			//System.out.print("*");
-			if((positionInLine == 1 + 2 * l || positionInLine == currentLine - 2 * l) && currentLine <= totalHeight - ((2 * l) + 1) && currentLine >= 1 + 4 * l)
+			if(positionInLine == 1 + 2 * l || positionInLine == currentLine - 2 * l)
 			{
 				//We are on the side of one of the interior triangles so we're good to go
 				return true;
